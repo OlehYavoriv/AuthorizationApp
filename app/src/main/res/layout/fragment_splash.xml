@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg_gradient"
+    tools:context=".ui.splash.SplashFragment">
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/splash_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPremiumRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="100K+ Premium Recipe"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivLogo"
+        app:layout_constraintStart_toStartOf="@+id/ivLogo"
+        app:layout_constraintTop_toBottomOf="@+id/ivLogo" />
+
+    <TextView
+        android:id="@+id/tvGetCooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="222dp"
+        android:gravity="center"
+        android:text="Get\nCooking"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvPremiumRecipe"
+        app:layout_constraintStart_toStartOf="@+id/tvPremiumRecipe"
+        app:layout_constraintTop_toBottomOf="@+id/tvPremiumRecipe" />
+
+    <TextView
+        android:id="@+id/tvFindTastyRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Simple way to find Tasty Recipe"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGetCooking" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonStart"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="@color/green"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:radius="10dp"
+        android:text="Start Cooking"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tvFindTastyRecipe"
+        app:layout_constraintStart_toStartOf="@+id/tvFindTastyRecipe"
+        app:layout_constraintTop_toBottomOf="@+id/tvFindTastyRecipe" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
